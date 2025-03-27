@@ -109,12 +109,19 @@
             }
         }
 
-        /* Novo estilo para a div player */
-        .player {
-            max-width: 70%;         /* Define a largura máxima como 70% */
-            margin: 0 auto;        /* Centraliza a div horizontalmente */
-            display: block;        /* Garante que a div se comporte como um bloco */
-        }
+.player {
+    max-width: 52%;         /* Define a largura máxima como 52% para telas grandes (computador) */
+    margin: 0 auto;        /* Centraliza a div horizontalmente */
+    display: block;        /* Garante que a div se comporte como um bloco */
+}
+
+/* Para telas menores (celulares e tablets) */
+@media (max-width: 600px) {
+    .player {
+        max-width: 70%;         /* Define a largura máxima como 70% para telas pequenas (celular) */
+    }
+}
+
     </style>
 </head>
 <body>
